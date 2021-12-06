@@ -1,0 +1,16 @@
+.slider-caption{
+    text-align: left;
+    align-items: center;
+    margin-bottom:220px ;
+    font-size: 20px;
+}
+.btn-slide{
+    border: none;
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-slide:hover{
+    background-color:burlywood;
+}

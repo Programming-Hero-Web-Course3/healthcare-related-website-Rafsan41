@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Pages/Home/Home';
+
 import Footer from './Pages/Shared/Footer/Footer';
 import NavVar from './Pages/Shared/NavVar/NavVar';
+import Home from './Pages/HomePage/Home/Home';
+import Navs from './Pages/HomePage/Navs/Navs';
 
 function App() {
   return (
     <div className="App">
-      <h2>this is app</h2>
+      
+      <Navs></Navs>
       <NavVar></NavVar>
       <Home></Home>
       <Footer></Footer>

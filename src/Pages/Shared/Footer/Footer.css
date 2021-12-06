@@ -1,7 +1,27 @@
 .footer-container{
-    background-color: rgba(22, 21, 21, 0.904);
+    background-color: rgb(79, 96, 112);
     color: aliceblue;
-    height: 250px;
+    height: 450px;
     position: relative;
     bottom:-300px;
+}
+.footerLink-container{
+    padding: 30px;
+}
+.footer-icon{
+    padding-left: 20px;
+}
+.footer-input{
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color:#445361 ;
+}
+.btn-submitfooter{
+ background-color: aqua;
+ border:none;
+ border-radius: 5px;
+ padding: 5px 10px;
+ margin-left: 10px;
 }
