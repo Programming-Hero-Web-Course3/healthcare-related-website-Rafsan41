@@ -9,15 +9,15 @@ const Slider = () => {
         <div>
             <Carousel fade>
                 <Carousel.Item interval={2000}>
-                    <img
+                  <img
       height='600px'
       className="d-block w-100"
       src={slideOne}
       alt="First slide"
     />
     <Carousel.Caption className='slider-caption'>
-       <h1>Dr. Mark Holen</h1>
-                        <p>Dr. Mark Holen's Clinic  Welcomes You!</p>
+       <h1>Dr.Mark Holen</h1>
+                        <p>Dr.Mark Holen's Clinic  Welcomes You!</p>
                         <button className='btn-slide'>Book Apointment</button>
         <button className='btn-slide'>Get Special Offer</button>                
     </Carousel.Caption>
@@ -30,7 +30,7 @@ const Slider = () => {
       alt="Second slide"
     />
     <Carousel.Caption className='slider-caption'>
-     <h1>Dr. Mark Holen</h1>
+     <h1>Dr.Mark Holen</h1>
                         <p>Dr. Mark Holen's Clinic  Welcomes You!</p>
                         <button className='btn-slide'>Book Apointment</button>
         <button className='btn-slide'>Get Special Offer</button> 

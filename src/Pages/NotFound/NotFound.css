@@ -1,0 +1,9 @@
+.btn-notFound{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    color: antiquewhite;
+    background-color: darkgray;
+    font-weight: 700;
+    font-size: large;
+}

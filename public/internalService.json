@@ -1,0 +1,38 @@
+[
+  {
+    "id": "IS01",
+    "img": "https://i.ibb.co/n8SpJtR/LOGO-CARDIOLOGY.png",
+    "name": "Pulmonary",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  },
+  {
+    "id": "IS02",
+    "img": "https://i.ibb.co/m5Fw8tX/logo-heart-surgury.png",
+    "name": "cardiology",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  },
+  {
+    "id": "IS03",
+    "img": "https://i.ibb.co/4K28jBT/logo-skin-care.png",
+    "name": "Cosmetic Solutions",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  },
+  {
+    "id": "IS04",
+    "img": "https://i.ibb.co/DbpqWc6/logo-eye-care.png",
+    "name": "Eye Care",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  },
+  {
+    "id": "IS05",
+    "img": "https://i.ibb.co/Myvfj4Y/logo-dental-care.png",
+    "name": "Denatal Care",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  },
+  {
+    "id": "IS06",
+    "img": "https://i.ibb.co/LSjJMsG/logo-eare-care.png",
+    "name": "Ear treatment",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+  }
+]

@@ -1,0 +1,27 @@
+.card-container{
+    width: 100%;
+}
+.card-middle{
+    width: 280px;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    
+
+}
+.card-middle img{
+    width: 278px;
+    height: 200px;
+}
+.accordion-body{
+    background-image: url(https://i.ibb.co/GW5nfNr/Woman-watching-a-laptop-screen-while-stretching-her-hand-and-typing-on-it.jpg);
+    color: navy;
+}
+.accordion-button{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    margin: 1px;
+}

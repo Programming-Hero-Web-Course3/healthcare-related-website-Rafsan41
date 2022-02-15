@@ -1,5 +1,92 @@
 .btn-signup{
     border: none;
-    background-color: rgb(77, 214, 248);
+    background-color: rgb(64, 67, 206);
     padding: 5px 10px;
+    font-weight: 500;
+    color:azure
+}
+.NavVar-logo{
+    
+    width: 200px;
+}
+.nav-contact{
+    display: flex;
+   
+  
+}
+
+.call-navs{
+    
+    gap: 4px;
+    margin: 5px;
+}
+.callnav-group{
+    display: flex;
+    padding-left: 5px;  
+}
+.call-icon{
+    color: beige;
+    padding-right: 10px;
+    font-size: 30px;
+    
+    
+}
+.phonenumber{
+    color: aliceblue;
+    text-align: left;
+    
+}
+.opentime-navs{
+    
+     margin: 5px
+}
+.timenav-group{
+    display: flex; 
+}
+.clock-icon{
+    color: beige;
+    padding-right: 10px;
+    font-size: 30px;
+    
+}
+.opentime{
+    color: aliceblue;
+    text-align: left;
+     
+}
+.navLink{
+    color: black;
+    padding-right: 20px ;
+    border:none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+ .NavVar-logo{
+    width: 300%;
+    margin-bottom:100px ;
+    
+  }
+  .call-navs{
+    width: 100%;
+
+    margin-bottom: 30px;
+     
+  }
+  .opentime-navs{
+      width: 100%;
+      margin-right: 100px;
+  }
+  .nav-contact{
+  width: 100%;  
+  margin-top:10px ;
+  margin-bottom:10px ;
+   
+  display: inline-block;
+  align-items: center;
+  }
+
 }

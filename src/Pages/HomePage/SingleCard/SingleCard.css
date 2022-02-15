@@ -1,0 +1,29 @@
+.singleCard{
+    margin-top: 150px;
+ background-color: rgb(18, 100, 182);
+ color: beige;
+ margin-left: 2px;
+ margin-right: 2px;
+ border: none;
+}
+.singleCard img{
+    width: 450px;
+}
+.Singlecard-body{
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
+    padding-top: 200px;
+}
+.Singlecard-text{
+    text-align: center;
+    justify-items: center;
+     text-align: left;
+}
+.btn-singlecard{
+    border:3px solid rgb(231, 229, 229);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 1000px;
+    background-color:rgb(18, 100, 182) ;
+}

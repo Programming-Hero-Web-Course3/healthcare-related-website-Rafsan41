@@ -1,0 +1,28 @@
+.singleService{
+    border: 1px solid rgb(247, 244, 244);
+    margin: 20px;
+    background-color: rgb(214, 220, 240);
+    border-radius: 20px;
+    
+}
+.singleService img{
+   border-radius: 110px;
+   width: 200px;
+   height: 200px;
+}
+.singleService h6{
+    text-align: left;
+    padding: 20px;
+}
+.btn-isCard{
+    background-color: rgb(201, 158, 241);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.btn-isCard:hover{
+    background-color:rgb(175, 110, 235) ;
+}

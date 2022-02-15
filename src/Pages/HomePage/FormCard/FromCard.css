@@ -1,0 +1,48 @@
+.fromcard{
+    margin-top: 100px;
+}
+.card2{
+    background-color: rgb(109, 175, 241);
+    color: white;
+}
+.grid-container{
+    display: grid;
+   grid-template-columns: repeat(2, 2fr); 
+  
+}
+.grid-item{
+    padding-top: 20px;
+    margin: 10px;
+}
+.input{
+    width: 170px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: rgb(109, 175, 241);
+}
+.card1{
+    background-color: rgb(226, 224, 224);
+    
+}
+.cardtitle1{
+    margin-top: 30px;
+}
+.btn-appointment{
+    background-color:rgb(109, 175, 241) ;
+    color: white;
+    margin-top: 30px;
+    padding: 7px 10px;
+    border: 2px solid white;
+}
+.tabletime{
+    margin: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.tr{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    width: 60px;
+    text-align: left;
+    padding: 0px;
+    
+}
