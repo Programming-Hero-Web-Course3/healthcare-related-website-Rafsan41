@@ -6,12 +6,17 @@ import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
 import About from './Pages/AboutPage/About/About';
 import NotFound from './Pages/NotFound/NotFound';
 import Service from './Pages/ServicePage/Service/Service';
+import RegisterFrom from './Pages/RegisterPage/RegisterFrom';
+import LogIn from './Pages/LogInPage/LogIn';
+import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <AuthProvider>
+        <Router>
             <NavVar></NavVar>
         <Switch>
 
@@ -27,16 +32,24 @@ function App() {
           <About></About>
           </Route>
 
-          <Route path="/service">
+          <PrivateRoute path="/service">
           <Service></Service>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/apointment">
-          <About></About>
-          </Route>
+          <PrivateRoute path="/apointment">
+          <h2>this is  appointment</h2>
+          </PrivateRoute>
 
-          <Route path="/counciling">
-          <About></About>
+          <PrivateRoute path="/counciling">
+          <h2>this is counciling</h2>
+          </PrivateRoute>
+
+          <Route path="/register">
+          <RegisterFrom></RegisterFrom>
+          </Route>
+            
+          <Route path="/logIn">
+          <LogIn></LogIn>
           </Route>
 
           <Route path="*">
@@ -46,6 +59,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
     
      
      

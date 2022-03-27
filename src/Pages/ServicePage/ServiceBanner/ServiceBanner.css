@@ -1,0 +1,29 @@
+.servicebanner{
+background-color: azure;
+width: 400px;
+margin-left: 600px;
+margin-bottom: 180px;
+}
+.servicebannertitle{
+    background-color: rgb(119, 67, 168);
+    width: 400px;
+    padding: 5px;
+   
+}
+.servicebannerinput{
+    width: 280px;
+    border: none;
+    border-bottom:2px solid black;
+    padding: 5px
+}
+.servicebanner-btn{
+    background-color: rgb(238, 235, 235);
+    color: darkorchid;
+    border:none;
+    border-radius:20px ;
+    font-weight: 600;
+    font-size: larger;
+    padding: 5px 10px;
+    margin-left: 210px;
+    margin-bottom: 10px;
+}

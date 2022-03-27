@@ -3,7 +3,7 @@ import { Carousel, Col, Container,  Row, Table } from 'react-bootstrap';
 import './AboutFrom.css'
 
 const AboutFrom = () => {
-    return (
+    return ( 
         <div>
         <div className='about1-section'>
        <Carousel variant="dark">
@@ -23,7 +23,7 @@ const AboutFrom = () => {
                       <input className='aboutinput' type="Email" placeholder='Enter Your Email'/><br /><br />
                     <input className='aboutinput' type="password" placeholder='Enter Your Password' /><br /><br />
 
-                    <button className='btn-aboutfrom'>submit</button>
+                    <button className='btn-aboutfrom'>Submit</button>
                     </div>
                    </div>
                 </div>

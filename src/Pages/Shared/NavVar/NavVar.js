@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../../Hooks/UseFirebase';
 import logo from '../../../images/logo.png'
 import './NavVar.css'
 const NavVar = () => {
-    return (
+  const { user, LogOut, } = useFirebase();
+  return (
+      
         <div>
             <>
   <Navbar bg="primary" variant="dark">
@@ -31,7 +34,7 @@ const NavVar = () => {
                   <Nav.Link   eventKey="link-2">
                     <div className='timenav-group'>
                        <div className='clock-icon'>
-                           <i class="far fa-clock"></i>
+                           <i className="far fa-clock"></i>
                         </div>
                         <div className='opentime'>
                     <strong>Opening Hours
@@ -56,8 +59,14 @@ const NavVar = () => {
       <Link className='navLink' to="/service">Service</Link>
       <Link className='navLink' to="/apointment">Apointment</Link>
       <Link className='navLink' to="/counciling">Counciling</Link>
-              </Nav>
-               <button className='btn- rounded-pill btn-signup'>sign up</button>
+            </Nav>
+          
+              <h4>{user.displayName}</h4>
+           
+               <Link className='navLink' to="/register"><button className='btn- rounded-pill btn-signup'>Register</button></Link>
+            <Link className='navLink' to="/logIn"><button className='btn- rounded-pill btn-signup'>Log In</button></Link>
+            {user?.email && <button onClick={LogOut} className='btn- rounded-pill btn-signup'>Log Out</button>}
+               
     </Container>
   </Navbar>
 </>
