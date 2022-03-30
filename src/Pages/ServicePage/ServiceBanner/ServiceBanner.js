@@ -1,7 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './ServiceBanner.css'
+
 const ServiceBanner = () => {
     return (
         <div>
@@ -21,7 +22,7 @@ const ServiceBanner = () => {
                       <input className='servicebannerinput ' type="Email" placeholder='Enter Your Email'/><br /><br />
                     <input className='servicebannerinput' type="password" placeholder='Enter Your Password' /><br /><br />
 
-                    <button className='servicebanner-btn'><FontAwesomeIcon icon="fa-solid fa-paper-plane" />Submit</button>
+                    <button className='servicebanner-btn'>Submit</button>
                     </div>
                    </div>
                 </div>

@@ -21,13 +21,14 @@ const SignInFrom = () => {
         console.log(e.target.value)
     }
     const handelRegister = e => {
+        e.preventDefault();
         console.log(email, password)
         createUserEmailAndPassword()
             .then(result => {
               setuser(result.user)
                 console.log(result.user);
         })
-        e.preventDefault();
+        
     }
     return (
         <div>

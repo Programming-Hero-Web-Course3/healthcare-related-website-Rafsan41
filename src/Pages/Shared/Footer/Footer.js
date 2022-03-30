@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Footer.css'
+
 const Footer = () => {
     return (
         <div>
@@ -10,7 +11,7 @@ const Footer = () => {
  <Container className='footerLink-container'>
   <Row>
             <Col>
-                <p>who we are</p>
+                <p><strong>Who we are</strong></p>
                 <p>About us</p>
                 <p>Awards & Achievements</p>
                 <p>Board of Directors</p>
@@ -19,7 +20,7 @@ const Footer = () => {
                 <p>News & Media</p>
             </Col>
             <Col>
-                <p>MEDICAL SERVICES</p>        
+            <p><strong>Medical Service</strong></p>        
                 <p>Cancer Care</p>        
                 <p>Heart Care</p>        
                 <p>Orthopedic Care</p>        
@@ -28,7 +29,7 @@ const Footer = () => {
                 <p>Urgent Care</p>        
             </Col>
                 <Col>
-                <p>PATIENTS & VISITORS</p>
+                <p><strong>Patients & Visitors</strong></p>
                 <p>Advance Care Planning</p>
                 <p>Billing and Insurance</p>
                 <p>Medical Records Request</p>
@@ -37,7 +38,7 @@ const Footer = () => {
                 <p>Web Nursery</p>
                 </Col>
                         <Col>
-                        <p>Follow us</p>
+                        <p><strong>Follow Us</strong></p>
                             <p>
                                 <i className="fab fa-twitter footer-icon ">  </i>    
                                 <i className="fab fa-facebook-f footer-icon "></i>
@@ -49,11 +50,14 @@ const Footer = () => {
                             <p>Subscribe us</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed incidunt inventore, aspernatur magnam .
                             </p>
-                            <input className='footer-input' type="email" placeholder='Your Email-Address'/><button className='btn-submitfooter'><i class="fas fa-arrow-right"></i></button>
+                            <div className='footer-email'>
+                                 <input className='footer-input' type="email" placeholder='Your Email-Address' />
+                            <button className='btn-submitfooter'><i className="fas fa-arrow-right"></i></button>
+                           </div>
                         </Col>
                     </Row>
                     <hr />
-                <p>© 2021 Hogash.com | All rights reserved.</p>
+                <p><img className='copyright' src='' alt="" /> 2021 Hogash.com | All rights reserved.</p>
                 </Container>
                 
             </div>

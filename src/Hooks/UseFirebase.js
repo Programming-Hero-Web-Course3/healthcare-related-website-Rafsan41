@@ -14,11 +14,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider()
 
     const signInGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user);
-                setUser(result.user);
-            })
+       return signInWithPopup(auth, googleProvider)
             .catch(error => {
                 setError(error.message);
             })
@@ -47,12 +43,16 @@ const useFirebase = () => {
 
      
     useEffect(() => {
-        onAuthStateChanged(auth, user => {
+     onAuthStateChanged(auth, user => {
             if (user) {
                 console.log("insider state change", user)
                 setUser(user)
+            } 
+            else {
+                setUser({})
           }  
-        })
+       })
+       
     })
 
 

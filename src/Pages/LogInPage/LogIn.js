@@ -1,9 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import useAuth from '../../Hooks/useAuth';
 import './LogIn.css'
 const LogIn = () => {
-    const {signInGoogle } = useAuth();
+    const { signInGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from ||'/home'
+    const handelGoogleLogIn = () => {
+        signInGoogle()
+            .then(result => {
+            history.push(redirect_url)
+        })
+    }
+
+
+
     return (
         <div>
            <div>
@@ -37,7 +50,7 @@ const LogIn = () => {
                 <br />
                 <br />
             <div> 
-                <button onClick={signInGoogle}>Sign in with Google</button><br />
+                <button onClick={handelGoogleLogIn}>Sign in with Google</button><br />
             
             </div>
         </div>
