@@ -1,0 +1,79 @@
+.container1{
+    background-color: slateblue;
+}
+.section-navlink{
+    padding-top: 10px;
+}
+.navLink{
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700px;
+    justify-content: start;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+}
+.register{
+    text-align: left;
+}
+
+.btn-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:3px;
+    padding-bottom: 3px;
+    
+}
+.btn-register {
+    background-color: hotpink;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+}
+.logIndiv{
+    padding-left: 5px;
+}
+.btn-logIn{
+    background-color: hotpink;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.logOutdiv{
+    padding-left: 14px;
+}
+.btn-logOut{
+    background-color: hotpink;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    font-weight: 700;
+}
+.userNameDisplay{
+    padding-left: 5px;
+    padding-top: 8px;
+    
+}
+.userNameDisplay p{
+     color: white;
+     padding-top: 5px;
+}
+.userName{
+    text-decoration: none;
+    color: rgb(217, 180, 236);
+    font-weight:700;
+    padding-left: 5px;
+}
+.displayName{
+    display: flex;
+    
+}
+.photourl{
+    display: flex;
+}
+

@@ -53,10 +53,10 @@ const FormCard = () => {
       <Card.Title className='cardtitle1'>BOOK AN APPOINTMENT</Card.Title>
                         <form action="">
                          <div class="grid-container">
-  <div class="grid-item"><input className='input' type="text" placeholder='Your Name'/></div>
-  <div class="grid-item"><input className='input' type="number" placeholder='Number' /></div>
-  <div class="grid-item"><input className='input' type="date"  /></div>  
-  <div class="grid-item"><input className='input' type="text" placeholder='Doctor Name' /></div>
+  <div class="grid-item"><input className='inputfc' type="text" placeholder='Your Name'/></div>
+  <div class="grid-item"><input className='inputfc' type="number" placeholder='Number' /></div>
+  <div class="grid-item"><input className='inputfc' type="date"  /></div>  
+  <div class="grid-item"><input className='inputfc' type="text" placeholder='Doctor Name' /></div>
 </div> 
                         </form>
                         <button className='btn-appointment'> Make An Appoinment</button>

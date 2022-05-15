@@ -5,55 +5,63 @@ import useAuth from '../../Hooks/useAuth';
 import "./RegisterFrom.css"
 const SignInFrom = () => {
 
-    const { signInGoogle,setEmail,setPassword,setUserName,createUserEmailAndPassword, setuser, email,password,} = useAuth();
+    const { auth, signInGoogle,email, setEmail, password, setPassword, createUserWithEmailAndPassword,error, setError} = useAuth();
     
 
-    const handelUserName = e => {
-        setUserName(e.target.value)
-        console.log(e.target.value)
-    }
-    const handelEmail = e => {
-        setEmail(e.target.value) 
-        console.log(e.target.value)
-    } 
-    const handelPassword = e => {
-        setPassword(e.target.value)
-        console.log(e.target.value)
-    }
-    const handelRegister = e => {
-        e.preventDefault();
-        console.log(email, password)
-        createUserEmailAndPassword()
-            .then(result => {
-              setuser(result.user)
-                console.log(result.user);
-        })
+    const handelRegistation = (e) => {
+        e.preventDefault()
+        if (password.length < 6) {
+            setError('password must be at least 6 charecter long.')
+            return;
+        }
+        if (!/(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password)) {
+            setError('password must be Minimum eight characters, at least one letter, one number and one special character')
+            return;
+        }
         
+        createUserWithEmailAndPassword(auth, email, password)
+           
+            .then(result => {
+                const user = result.user
+                console.log(user)
+                setError('')
+                 
+            })
+          .catch(error => {
+                    setError(error.message)
+          })
+        
+    }
+    const handelEmail = (e) => {
+        e.preventDefault()
+        setEmail(e.target.value)
+    }
+    const handelPassword = (e) => {
+        e.preventDefault()
+        setPassword(e.target.value)
     }
     return (
         <div>
             <div>
-                <form onSubmit={handelRegister}>
+                <form  onSubmit={handelRegistation}>
                 <div>
                     <h2 className='signIn-title'>Please Register</h2>
                 </div>
                 <div>
                      <div className='inputbox'>
-                    <input onBlur={handelUserName} type="text" required />
-                    <span>Username</span>
-                </div><br />
-                     <div className='inputbox'>
                     <input onBlur={handelEmail} type="email" required />
                     <span>Email</span>
-                </div><br />
+                        </div><br />
                 <div className='inputbox'>
-                    <input onBlur={handelPassword} type="password" required />
-                    <span>Password</span>
-                    </div><br />
-                    <div>
+                    <input onBlur={handelPassword}  type="password" required />
+                            <span>Password</span>
+                            <p className='errorMassgepassword'>{error}</p>
+                        </div>
+                        <br /><br /><br />
+                    <div className='registerBtn'>
                        <button type='submit'>Register</button>
                         </div><br />
-                        <div>
+                        <div className='switchlogIn'>
                            <Link className='navLink' to="/logIn"><button>I have already an Account</button></Link> 
                         </div>
                </div>
@@ -65,7 +73,7 @@ const SignInFrom = () => {
                 <br />
                 <br />
                 <br />
-            <div> 
+            <div className='loginWithGoogle'> 
                 <button onClick={signInGoogle}>Sign in with Google</button>
             </div>
         </div>

@@ -1,0 +1,33 @@
+.placeSection{
+    background-color: rgb(147, 193, 239);
+    height: 465px;
+    border-radius: 20px;
+    
+}
+.placeSection h5{
+    color: rgb(4, 140, 4);
+    text-align: left;
+    font-size: medium;
+}
+.placeSection h2, p{
+    text-align: left;
+}
+.placeName{
+    color: darkslateblue;
+    text-align: left;
+    padding-top: 50px;
+    font-size: medium;
+}
+.more-info{
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.placeservice{
+    padding-top: 60px;
+}

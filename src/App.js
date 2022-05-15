@@ -1,6 +1,6 @@
 import './App.css';
 import Footer from './Pages/Shared/Footer/Footer';
-import NavVar from './Pages/Shared/NavVar/NavVar';
+
 import Home from './Pages/HomePage/Home/Home';
 import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
 import About from './Pages/AboutPage/About/About';
@@ -10,6 +10,12 @@ import RegisterFrom from './Pages/RegisterPage/RegisterFrom';
 import LogIn from './Pages/LogInPage/LogIn';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import MenuVar from './Pages/Shared/MenuVar/MenuVar';
+import SubMenuVar from './Pages/Shared/SubMenuVar/SubMenuVar';
+import Appointment from './Pages/AppointmentPage/Appointment/Appointment';
+import Counciling from './Pages/CouncilingPage/Counciling/Counciling';
+
+
 
 
 function App() {
@@ -17,8 +23,10 @@ function App() {
     <div className="App">
       <AuthProvider>
         <Router>
-            <NavVar></NavVar>
-        <Switch>
+          <SubMenuVar></SubMenuVar>
+          <MenuVar></MenuVar>
+          <Switch>
+            
 
           <Route exact path="/">
           <Home></Home>
@@ -36,12 +44,12 @@ function App() {
           <Service></Service>
           </PrivateRoute>
 
-          <PrivateRoute path="/apointment">
-          <h2>this is  appointment</h2>
+          <PrivateRoute path="/appointment">
+          <Appointment></Appointment>
           </PrivateRoute>
 
           <PrivateRoute path="/counciling">
-          <h2>this is counciling</h2>
+         <Counciling></Counciling>
           </PrivateRoute>
 
           <Route path="/register">
@@ -56,7 +64,7 @@ function App() {
           <NotFound></NotFound>
           </Route>
 
-        </Switch>
+        </Switch> 
         <Footer></Footer>
       </Router>
       </AuthProvider>

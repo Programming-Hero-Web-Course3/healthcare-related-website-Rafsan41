@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Footer.css'
-
+import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
+    
     return (
         <div>
            
@@ -57,7 +58,7 @@ const Footer = () => {
                         </Col>
                     </Row>
                     <hr />
-                <p><img className='copyright' src='' alt="" /> 2021 Hogash.com | All rights reserved.</p>
+                <p><img src={faCopyright} alt="" /> 2021 Hogash.com | All rights reserved.</p>
                 </Container>
                 
             </div>

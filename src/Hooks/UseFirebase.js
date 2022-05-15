@@ -5,73 +5,56 @@ import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, signOu
 initAuthentication()
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const[login, isLogin] = useState(false)
     const auth = getAuth();
 
-    const googleProvider = new GoogleAuthProvider()
+    
 
     const signInGoogle = () => {
+        const googleProvider = new GoogleAuthProvider();
        return signInWithPopup(auth, googleProvider)
-            .catch(error => {
+         .catch(error => {
                 setError(error.message);
-            })
-    }
+            })   
+    }//signinGoogle
 
     const LogOut = () => {
         signOut(auth)
-            .then(() => {
-                setUser({});
-        })
-    }
-
-    const createUserEmailAndPassword = () => {
-        return createUserWithEmailAndPassword(auth, userName, email, password)
-            
-    }
-
-
-    const signInEmailAndPassword = () => {
-        signInWithEmailAndPassword(auth,  email, password)
-            .then(result => {
-                console.log(result.user);
-                setUser(result.user);
-        })
-   }
-
+            .then(() => {})
+    }//LogOut
      
     useEffect(() => {
-     onAuthStateChanged(auth, user => {
+    const unsubscribe = onAuthStateChanged(auth, user => {
             if (user) {
-                console.log("insider state change", user)
                 setUser(user)
             } 
             else {
                 setUser({})
           }  
-       })
-       
-    })
+       })//onAuthStageChange
+        return () => unsubscribe;
+    },[])//useEffect
 
 
 
     return {
-        
+        auth,
         user,
-        error,
         email,
+        login,
+        error,
         password,
-        userName,
-        auth, 
-        setUserName,
+        LogOut,
+        isLogin,
         setEmail,
+        setError,
         setPassword,
         signInGoogle,
-        LogOut,
-        signInEmailAndPassword,
-        createUserEmailAndPassword
-    }
-}
+        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword
+    }//return
+}//useFirebase
 export default useFirebase;
