@@ -3,7 +3,7 @@
 }
 .card-middle{
     width: 280px;
-    height: 400px;
+    height: 80%;
     margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
@@ -14,14 +14,20 @@
 }
 .card-middle img{
     width: 278px;
-    height: 200px;
+    height: 40%;
 }
 .accordion-body{
-    background-image: url(https://i.ibb.co/GW5nfNr/Woman-watching-a-laptop-screen-while-stretching-her-hand-and-typing-on-it.jpg);
+    background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
     color: navy;
+    
+}
+.accordion{
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 25%;
 }
 .accordion-button{
     background-color: cornflowerblue;
     color: aliceblue;
     margin: 1px;
+    
 }

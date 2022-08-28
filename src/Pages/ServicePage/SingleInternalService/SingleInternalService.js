@@ -5,8 +5,8 @@ const SingleInternalService = ({ serviceCard }) => {
     return (
         <div className='singleService'>
             <img src={img}  alt="" />
-            <h3>{name}</h3>
-            <h6>{description}</h6>
+            <h4>{name}</h4>
+            <p>{description}</p>
             <button className='btn-isCard'>Read More</button>
         </div>
     );

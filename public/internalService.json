@@ -3,36 +3,36 @@
     "id": "IS01",
     "img": "https://i.ibb.co/n8SpJtR/LOGO-CARDIOLOGY.png",
     "name": "Pulmonary",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description": "Pulmonary hypertension is high blood pressure in your pulmonary arteries, which carry oxygen-poor blood from your heart to your lungs. The earliest symptom is shortness of breath during your usual routine.  "
   },
   {
     "id": "IS02",
     "img": "https://i.ibb.co/m5Fw8tX/logo-heart-surgury.png",
     "name": "cardiology",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine."
   },
   {
     "id": "IS03",
     "img": "https://i.ibb.co/4K28jBT/logo-skin-care.png",
     "name": "Cosmetic Solutions",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description":"Cosmetic Solutions technicians constantly immerse themselves in training of the latest procedures in the makeup Solutions.lead by Cosmetic Solutions President,Cosmetic Enhancement Specialist and our staff has unparalleled skill and expertise."
   },
   {
     "id": "IS04",
     "img": "https://i.ibb.co/DbpqWc6/logo-eye-care.png",
     "name": "Eye Care",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description": "Although effective interventions exist to address the two leading causes of vision impairment, namely optical correction for refractive errors and surgery for cataract, there remains a large unmet need for care."
   },
   {
     "id": "IS05",
     "img": "https://i.ibb.co/Myvfj4Y/logo-dental-care.png",
     "name": "Denatal Care",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description": "Patients Are Our First Priority. Let's Make Your Smile Brighter! New Patients Welcome. We Know Teeth Are Healthy And Important. Call Us Today To Book Your Appointment."
   },
   {
     "id": "IS06",
     "img": "https://i.ibb.co/LSjJMsG/logo-eare-care.png",
     "name": "Ear treatment",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    "description": "An ear infection in an adult may mean a more serious problem than in a child.If you have an ear infection, you should see your healthcare provider for treatment.You should see an ear, nose, and throat specialis or an ear subspecialist."
   }
 ]
